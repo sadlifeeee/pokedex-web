@@ -11,6 +11,9 @@ function App() {
           <img src = {pokeball} id = "pokeballImage"/>
 
           <p id = "title">Kanto PokeDex</p>
+
+          <input id = "search" placeholder='Search'></input>
+
         </div>
         
 
@@ -23,6 +26,10 @@ function App() {
       
       <div id = "pokedexBody">
 
+      </div>
+
+      <div id = "loadingDiv">
+        
       </div>
 
       <footer>
