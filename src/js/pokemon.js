@@ -36,9 +36,8 @@ async function getPokemon(num) {
     let res = await fetch(url);
 
     let pokemon = await res.json();
-    
     let pokemonPhotoID = ""
-
+    
     if(num < 10) 
         pokemonPhotoID = "00" + num.toString();
     else if(num < 100 && num >= 10) 
@@ -120,5 +119,8 @@ function displayPokemon() {
         document.getElementById("pokedexBody").append(pokemonCard)
         
     }
+
+    
+    modalLoader()
 
 }
